@@ -22,7 +22,7 @@ function getHtmlInputs() {
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [],
-  base: "/02-website-project/",
+  base: "/01-webseiten-projekt-saracame/",
   build: {
     outDir: "dist",
     rollupOptions: {
