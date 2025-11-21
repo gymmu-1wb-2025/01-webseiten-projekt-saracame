@@ -1,7 +1,12 @@
 h1 {
   font-size: 3.5em;
-  color: #aa0808e7;
+  color: #b06c4ce7;
   margin-bottom: 0.5em;
 }
 h2 {
+  background-color: rgb(102, 63, 28);
+}
+
+body {
+  background-color: rgb(204, 184, 155);
 }

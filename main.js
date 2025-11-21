@@ -1,7 +1,7 @@
 let counter = 0;
 
 function createNewElement() {
-  let createNewElement = document.createElement("p");
+  let newElement = document.createElement("p");
 
   counter = counter + 1;
 
