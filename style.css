@@ -1,4 +1,10 @@
+body {
+  font-weight: 400;
+  font-style: normal;
+}
+
 h1 {
+  font-family: "Playfair Display", serif;
   font-size: 3.5em;
   color: #fff7f0;
   margin-bottom: 0.5em;
