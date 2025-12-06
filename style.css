@@ -28,3 +28,10 @@ body {
   display: block;
   margin: 20px auto;
 }
+
+.beschreibung {
+  font-size: 22px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(153, 112, 65);
+}
