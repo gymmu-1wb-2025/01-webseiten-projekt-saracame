@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="de">
   <head>
     <meta charset="UTF-8">
@@ -7,22 +7,38 @@
     <title>Eigene Webseite</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    >
 
     <link rel="stylesheet" href="style.css">
     <script src=" ./main.js" defer></script>
   </head>
-
   <body>
     <header>
       <h1>Brownie Rezept</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="./unterseiten/Rezept.html">Rezept</a>
+          </li>
+          <li>
+            <a href="./unterseiten/zubereitung.html">Zubereitung</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-      <img src="https://icecreambakery.in/wp-content/uploads/2024/12/Brownie-Recipe-with-Cocoa-Powder.jpg" alt="leckere Brownies" class="brownie-bild">
-      <link rel="stylesheet" href="style.css">
-
-
-      <p class="beschreibung">leckere, saftige Brownies - ganz einfach selbst gemacht!</p>
+    <img
+      src="https://icecreambakery.in/wp-content/uploads/2024/12/Brownie-Recipe-with-Cocoa-Powder.jpg"
+      alt="leckere Brownies"
+      class="brownie-bild"
+    >
+    <p class="beschreibung">
+      leckere, saftige Brownies - ganz einfach selbst gemacht!
+    </p>
 
     <button onclick="createNewElement()">new elem</button>
 
@@ -33,23 +49,25 @@
         backst. Das Rezept ist leicht nachzumachen und perfekt für jede
         Gelegenheit.
       </section>
+
       <section>
         <h2 class="image-section">Was dich hier erwartet:</h2>
         <p>Ein einfaches Brownie-Grundrezept.</p>
-        <p> Schritt für Schritt Anleitung mit Bildern.</p>
+        <p>Schritt für Schritt Anleitung mit Bildern.</p>
         <p>Variationen (z.B. mit Nüssen oder Schokolade)</p>
-
       </section>
+
       <section>
         <h2>Unterseiten verlinken</h2>
         <p>
           Wir können auch weitere Webseiten verknüpfen, dafür müssen wir nur
-          einen Link angeben, wie zum Beispiel zu den
-          <a href="./unterseiten/Rezept.html">Rezept</a>.
-
-          <a href="./unterseiten/zubereitung.html">Zubereitung</a>
+          einen Link angeben.
         </p>
       </section>
     </main>
 
-    <footer>Meine Webseite</footer>
+    <footer>
+      <p>Brownie Rezept Webseite - Projekt von Sara Camenzind</p>
+    </footer>
+  </body>
+</html>
