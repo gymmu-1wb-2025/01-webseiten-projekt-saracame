@@ -156,3 +156,10 @@ body {
   color: var(--text-color);
   line-height: 1.6;
 }
+
+.browniebild-unter {
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px auto;
+}
