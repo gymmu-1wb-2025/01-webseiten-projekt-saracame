@@ -172,3 +172,23 @@ body {
   border-radius: 10px; /* optional: abgerundete Ecken */
   border: 3px solid var(--accent); /* optional: Rahmen passend zum Design */
 }
+
+.browniebild-double {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 15px auto;
+  border-radius: 10px;
+  border: 3px solid var(--accent);
+}
+
+.browniebild-white {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 15px auto;
+  border-radius: 10px;
+  border: 3px solid var(--accent);
+}
