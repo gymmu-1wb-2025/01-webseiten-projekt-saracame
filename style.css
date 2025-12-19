@@ -163,3 +163,12 @@ body {
   display: block;
   margin: 0 auto 15px auto;
 }
+
+.browniebild-zutaten {
+  max-width: 300px; /* maximale Breite*/
+  height: auto; /* proportional skalieren */
+  display: block;
+  margin: 15px auto; /* zentriert und Abstand oben/unten */
+  border-radius: 10px; /* optional: abgerundete Ecken */
+  border: 3px solid var(--accent); /* optional: Rahmen passend zum Design */
+}
