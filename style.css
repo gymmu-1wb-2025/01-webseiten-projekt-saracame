@@ -3,16 +3,16 @@
   --secondary: #ba9a7e; /* Hintergrund */
   --accent: #fff7f0; /* Helle Schrift*/
   --box-bg: #c19f83; /* Hintergrund der Boxen */
-  --text-color: #333;
+  --text-color: #333; /* Standard-Textfarbe */
 }
 
-/* Grunfdlagen */
+/* ===== Grundlegendes Reset ===== */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
+/* ===== Body-Grundlayout ===== */
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -36,7 +36,7 @@ body {
   margin: 0 auto;
 }
 
-/* Zuweisung der Bereiche */
+/* ===== Bereichszuweisung ===== */
 .header {
   grid-area: header;
   text-align: center;
@@ -54,13 +54,14 @@ body {
   padding: 20px;
 }
 
-/* Header*/
+/* ===== Header Styling ===== */
 h1 {
   font-family: "Playfair Display", serif;
   color: var(--accent);
   margin-bottom: 1em;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
+/* ===== Sections im Main-Bereich ===== */
 main section {
   background-color: var(--box-bg);
   padding: 20px;
@@ -173,6 +174,7 @@ body {
   border: 3px solid var(--accent); /* optional: Rahmen passend zum Design */
 }
 
+/* Double Chocolate Brownies Bild */
 .browniebild-double {
   max-width: 400px;
   width: 100%;
@@ -182,7 +184,7 @@ body {
   border-radius: 10px;
   border: 3px solid var(--accent);
 }
-
+/* White Chocolate Brownies Bild */
 .browniebild-white {
   max-width: 400px;
   width: 100%;
