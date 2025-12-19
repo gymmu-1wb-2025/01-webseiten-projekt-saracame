@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meine Brownie Welt</title>
+    <!-- Verbindung zu Google Fonts -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,24 +12,28 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
     >
-
+    <!-- Verbindung zur externen CSS-Datei -->
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <!-- HEADER: Enthält den Seitentitel, ein Bild und eine kurze Beschreibung -->
     <header class="header">
       <h1>Brownie Rezept</h1>
+      <!-- Bild im Header -->
       <img
         src="https://icecreambakery.in/wp-content/uploads/2024/12/Brownie-Recipe-with-Cocoa-Powder.jpg"
         alt="Leckere Brownies auf einem Teller"
         class="brownie-bild"
       >
+      <!-- Beschreibung unter dem Bild -->
       <p class="beschreibung">
         Leckere, saftige Brownies - ganz einfach selbst gemacht!
       </p>
     </header>
-
+    <!-- NAVIGATION: Menü mit Links zu den Unterseiten -->
     <nav class="nav">
       <ul>
+        <!-- Link zur Startseite -->
         <li>
           <a href="index.html">
             <svg viewBox="0 0 24 24" class="icon">
@@ -45,6 +50,7 @@
             Start
           </a>
         </li>
+        <!-- Link zur Rezeptseite -->
         <li>
           <a href="./unterseiten/Rezept.html">
             <svg viewBox="0 0 24 24" class="icon">
@@ -63,6 +69,7 @@
             Rezepte
           </a>
         </li>
+        <!-- Link zur Zubereitungsseite -->
         <li>
           <a href="./unterseiten/Zubereitung.html">
             <svg viewBox="0 0 24 24" class="icon">
@@ -71,6 +78,7 @@
             Zubereitung
           </a>
         </li>
+        <!-- Link zur Variationen-Seite -->
         <li>
           <a href="./unterseiten/Variationen.html">
             <svg viewBox="0 0 24 24" class="icon">
@@ -85,8 +93,9 @@
         </li>
       </ul>
     </nav>
-
+    <!-- MAIN: Hauptinhalt der Seite -->
     <main class="main">
+      <!-- Abschnitt 1: Willkommen in der Backstube -->
       <section>
         <h2>Willkommen in der Backstube</h2>
         <p>
@@ -95,7 +104,7 @@
           Gelegenheit.
         </p>
       </section>
-
+      <!-- Abschnitt 2: Info über Inhalte der Seite -->
       <section class="image-section">
         <h2>Was dich hier erwartet</h2>
         <p>
@@ -103,6 +112,7 @@
           tolle Variationen mit Nüssen oder weißer Schokolade.
         </p>
       </section>
+      <!-- Abschnitt 3: Dynamischer Inhalt / Tipp des Tages -->
 
       <section>
         <h2>Tipp des Tages</h2>
@@ -111,7 +121,7 @@
         </div>
       </section>
     </main>
-
+    <!-- FOOTER: Fußzeile mit Urheberangabe -->
     <footer class="footer">
       <p>&copy;Sara Camenzind - Brownie Projekt</p>
     </footer>
