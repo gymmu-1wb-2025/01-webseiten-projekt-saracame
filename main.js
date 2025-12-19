@@ -1,16 +1,20 @@
+// ===== Zähler für neu erstellte Elemente =====
 let counter = 0;
 
+// ===== Funktion: Neues Element in <main> einfügen =====
 function createNewElement() {
   let newElement = document.createElement("p");
+  // Zähler erhöhen und Text setzen
   counter++;
   newElement.textContent = "Element " + counter;
-
+  // <main>-Element auswählen und das neue <p> anhängen
   let mainElement = document.querySelector("main");
   mainElement.appendChild(newElement);
 }
 
 // ===== Dynamischer JSON-Inhalt =====
 function loadBrownieFact() {
+  // Array mit Brownie-Fakten/Tipps
   const brownieFacts = [
     "Wusstest du? Brownies wurden 1893 in Chicago erfunden!",
     "Tipp: Lass die Brownies in der Form ganz abkühlen, damit sie nicht brechen.",
@@ -18,7 +22,7 @@ function loadBrownieFact() {
     "Schoko-Fakt: Dunkle Schokolade (über 70%) ist am besten für Brownies.",
     "Back-Wissen: Eier sollten Zimmertemperatur haben für den besten Teig.",
   ];
-
+  // Zufälligen Fakt auswählen
   const randomFact =
     brownieFacts[Math.floor(Math.random() * brownieFacts.length)];
 
