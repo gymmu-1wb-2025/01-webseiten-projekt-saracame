@@ -2,40 +2,130 @@
 <html lang="de">
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eigene Webseite</title>
+    <title>Meine Brownie Welt</title>
+    <!-- Verbindung zu Google Fonts -->
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    >
+    <!-- Verbindung zur externen CSS-Datei -->
     <link rel="stylesheet" href="style.css">
   </head>
-
   <body>
-    <header>
-      <h1>Webseite von ...</h1>
+    <!-- HEADER: Enthält den Seitentitel, ein Bild und eine kurze Beschreibung -->
+    <header class="header">
+      <h1>Brownie Rezept</h1>
+      <!-- Bild im Header -->
+      <img
+        src="https://icecreambakery.in/wp-content/uploads/2024/12/Brownie-Recipe-with-Cocoa-Powder.jpg"
+        alt="Leckere Brownies auf einem Teller"
+        class="brownie-bild"
+      >
+      <!-- Beschreibung unter dem Bild -->
+      <p class="beschreibung">
+        Leckere, saftige Brownies - ganz einfach selbst gemacht!
+      </p>
     </header>
-
-    <main>
+    <!-- NAVIGATION: Menü mit Links zu den Unterseiten -->
+    <nav class="nav">
+      <ul>
+        <!-- Link zur Startseite -->
+        <li>
+          <a href="index.html">
+            <svg viewBox="0 0 24 24" class="icon">
+              <path d="M2 12 L12 2 L22 12" fill="none" stroke-width="2"/>
+              <rect
+                x="5"
+                y="12"
+                width="14"
+                height="10"
+                fill="none"
+                stroke-width="2"
+              />
+            </svg>
+            Start
+          </a>
+        </li>
+        <!-- Link zur Rezeptseite -->
+        <li>
+          <a href="./unterseiten/Rezept.html">
+            <svg viewBox="0 0 24 24" class="icon">
+              <rect
+                x="5"
+                y="4"
+                width="14"
+                height="16"
+                rx="2"
+                fill="none"
+                stroke-width="2"
+              />
+              <line x1="8" y1="9" x2="16" y2="9" stroke-width="2"/>
+              <line x1="8" y1="13" x2="16" y2="13" stroke-width="2"/>
+            </svg>
+            Rezepte
+          </a>
+        </li>
+        <!-- Link zur Zubereitungsseite -->
+        <li>
+          <a href="./unterseiten/Zubereitung.html">
+            <svg viewBox="0 0 24 24" class="icon">
+              <path d="M2 10 A10 10 0 0 0 22 10" fill="none" stroke-width="2"/>
+            </svg>
+            Zubereitung
+          </a>
+        </li>
+        <!-- Link zur Variationen-Seite -->
+        <li>
+          <a href="./unterseiten/Variationen.html">
+            <svg viewBox="0 0 24 24" class="icon">
+              <polygon
+                points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"
+                fill="none"
+                stroke-width="2"
+              />
+            </svg>
+            Variationen
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- MAIN: Hauptinhalt der Seite -->
+    <main class="main">
+      <!-- Abschnitt 1: Willkommen in der Backstube -->
       <section>
-        <h2>Dies ist ein erster Abschnitt</h2>
-        Abschnitte haben immer einen Titel und dann den Text.
-      </section>
-
-      <section>
-        <h2>Das p-Tag</h2>
-        <p>Der Text sollte immer in ein p gepackt werden.</p>
-        <p>Mit dem p ist es auch möglich einen Zeilenumbruch zu haben.</p>
-      </section>
-
-      <section>
-        <h2>Unterseiten verlinken</h2>
+        <h2>Willkommen in der Backstube</h2>
         <p>
-          Wir können auch weitere Webseiten verknüpfen, dafür müssen wir nur
-          einen Link angeben, wie zum Beispiel zu den
-          <a href="./unterseiten/hobbies.html">Hobbies</a>.
+          Hier zeige ich dir Schritt für Schritt, wie du super saftige Brownies
+          backst. Das Rezept ist leicht nachzumachen und perfekt für jede
+          Gelegenheit.
         </p>
       </section>
-    </main>
+      <!-- Abschnitt 2: Info über Inhalte der Seite -->
+      <section class="image-section">
+        <h2>Was dich hier erwartet</h2>
+        <p>
+          Ein einfaches Brownie-Grundrezept, Schritt-für-Schritt Anleitungen und
+          tolle Variationen mit Nüssen oder weißer Schokolade.
+        </p>
+      </section>
+      <!-- Abschnitt 3: Dynamischer Inhalt / Tipp des Tages -->
 
-    <footer>Meine Webseite</footer>
+      <section>
+        <h2>Tipp des Tages</h2>
+        <div id="dynamic-content">
+          <p>Lade...</p>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER: Fußzeile mit Urheberangabe -->
+    <footer class="footer">
+      <p>&copy;Sara Camenzind - Brownie Projekt</p>
+    </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>
